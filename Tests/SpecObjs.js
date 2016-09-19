@@ -10,7 +10,6 @@ var NavBar = (function () {
     NavBar.prototype.goto = function (selector) {
         browser.wait(ec.elementToBeClickable(selector), 2000).then(function () {
             selector.click();
-            console.log('\n' + selector + ' clicked');
             browser.sleep(300);
         });
     };

@@ -9,7 +9,7 @@ describe('angularjs homepage', () => {
 
     beforeAll(() => {
         browser.get('http://www.angularjs.org');
-        // browser.driver.manage().window().maximize();
+        //browser.driver.manage().window().maximize();
     });
 
     afterAll(() => {

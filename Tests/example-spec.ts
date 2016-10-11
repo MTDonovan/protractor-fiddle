@@ -20,9 +20,9 @@ describe('angularjs homepage', () => {
         var header: any = element(by.css('div[class="navbar-inner"]'));
         browser.wait(ec.visibilityOf(header), 10000).then(() => {
             navBar
-				.gotoHome()
-				.gotoLearn()
-				.gotoDevelop();
+		.gotoHome()
+		.gotoLearn()
+		.gotoDevelop();
             //make sure that the click worked
             browser.sleep(1000);
         });

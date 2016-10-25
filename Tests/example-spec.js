@@ -1,5 +1,5 @@
 "use strict";
-var SpecObjs_1 = require('./SpecObjs');
+var SpecObjs_1 = require("./SpecObjs");
 var ec = protractor.ExpectedConditions;
 describe('angularjs homepage', function () {
     var navBar = new SpecObjs_1.NavBar();
@@ -12,7 +12,10 @@ describe('angularjs homepage', function () {
     it('Click the "Home" link in the site\'s header', function () {
         var header = element(by.css('div[class="navbar-inner"]'));
         browser.wait(ec.visibilityOf(header), 10000).then(function () {
-            navBar.gotoHome().gotoLearn().gotoDevelop();
+            navBar
+                .goto('Learn')
+                .goto('Develop')
+                .goto('Discuss');
             browser.sleep(1000);
         });
     });

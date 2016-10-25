@@ -19,11 +19,12 @@ describe('angularjs homepage', () => {
     it('Click the "Home" link in the site\'s header', () => {
         var header: any = element(by.css('div[class="navbar-inner"]'));
         browser.wait(ec.visibilityOf(header), 10000).then(() => {
-            navBar
-		.gotoHome()
-		.gotoLearn()
-		.gotoDevelop();
-            //make sure that the click worked
+          navBar
+		        .goto('Learn')
+		        .goto('Develop')
+		        .goto('Discuss');
+
+            //make sure that the clicks worked
             browser.sleep(1000);
         });
     });

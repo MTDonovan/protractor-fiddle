@@ -1,0 +1,6 @@
+# block mapped files
+*.js
+*.map
+
+# exclude config file
+!conf.js

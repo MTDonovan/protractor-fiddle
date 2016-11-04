@@ -20,12 +20,12 @@ describe('angularjs homepage', () => {
         var header: any = element(by.css('div[class="navbar-inner"]'));
         browser.wait(ec.visibilityOf(header), 10000).then(() => {
           navBar
-		.goto('Learn')
-		.goto('Develop')
-		.goto('Discuss');
+		    .goto('Learn')
+		    .goto('Develop')
+		    .goto('Discuss');
 
-            //make sure that the clicks worked
-            browser.sleep(1000);
+          //make sure that the clicks worked
+          browser.sleep(1000);
         });
     });
 });

@@ -23,9 +23,6 @@ describe('angularjs homepage', () => {
 		    .goto('Learn')
 		    .goto('Develop')
 		    .goto('Discuss');
-
-          //make sure that the clicks worked
-          browser.sleep(1000);
         });
     });
 });

@@ -1,7 +1,7 @@
 /// <reference path="../testheader.ts" />
 import {NavBar} from './SpecObjs';
 
-var ec: any = protractor.ExpectedConditions;
+const EC: any = protractor.ExpectedConditions;
 
 describe('angularjs homepage', () => {
     //classes
@@ -18,7 +18,7 @@ describe('angularjs homepage', () => {
 
     it('Click the "Home" link in the site\'s header', () => {
         var header: any = element(by.css('div[class="navbar-inner"]'));
-        browser.wait(ec.visibilityOf(header), 10000).then(() => {
+        browser.wait(EC.visibilityOf(header), 10000).then(() => {
           navBar
 		    .goto('Learn')
 		    .goto('Develop')

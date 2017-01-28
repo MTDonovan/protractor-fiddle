@@ -1,12 +1,12 @@
 /// <reference path="../testheader.ts" />
-var ec: any = protractor.ExpectedConditions;
+const EC: any = protractor.ExpectedConditions;
 
 class NavBar{
     public goto(selector){
       var header_selector: any = element(by.xpath('//a[@href][@class="dropdown-toggle"][text()=" '+ selector +' "]'));
 
       function gotoSelector(){
-        browser.wait(ec.elementToBeClickable(header_selector), 5000).then(() => {
+        browser.wait(EC.elementToBeClickable(header_selector), 5000).then(() => {
             header_selector.click();
         });
       }

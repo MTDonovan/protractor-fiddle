@@ -4,7 +4,6 @@ import {NavBar} from './SpecObjs';
 const EC: any = protractor.ExpectedConditions;
 
 describe('angularjs homepage', () => {
-    //classes
     var navBar = new NavBar();
 
     beforeAll(() => {

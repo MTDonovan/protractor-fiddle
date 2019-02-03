@@ -3,11 +3,11 @@ const EC: any = protractor.ExpectedConditions;
 
 class NavBar {
     public goto(selector) {
-      var header_selector: any = element(by.xpath('//a[@href][@class="dropdown-toggle"][text()=" '+ selector +' "]'));
+      var headerSelector: any = element(by.xpath('//a[@href][@class="dropdown-toggle"][text()=" '+ selector +' "]'));
 
       function gotoSelector() {
-        browser.wait(EC.elementToBeClickable(header_selector), 5000).then(() => {
-            header_selector.click();
+        browser.wait(EC.elementToBeClickable(headerSelector), 5000).then(() => {
+            headerSelector.click();
         });
       }
       gotoSelector();
